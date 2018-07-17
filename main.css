@@ -1,0 +1,91 @@
+body {
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #555 1px, rgba(0, 0, 0, 0) 1px);
+    margin-top: 5vh;
+    background-attachment: fixed; /* makes the bg dots stay in place yeet*/
+}
+
+#mySVG {
+    position: fixed;
+    top: 15%;
+    width: 400px;
+    height: 210px;
+    float:right;
+  }
+
+.title {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 900;
+    font-size: 200px;
+    font-kerning: auto;
+    font-stretch: normal;
+    transform: rotate(-90deg);
+    position: fixed;;
+    float: right;
+    z-index: 1;
+
+}
+
+.nav {
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    position: fixed;
+    transition: 150ms ease-in-out;
+
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+li, a{
+
+    top: 0;
+    display: inline;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    float: right;
+    transition: inherit;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #ffeb55;
+    color: black;
+}
+
+
+h1 {
+    font-family: 'Yantramanav', sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.sect {
+    width: 30%;
+    height: 40vh;
+    margin: 10vh 30vw; /*pushes the first sect down because the nav bar drops down 10vh*/
+    border: solid 2px #ffeb55;
+}
+
+.sect > div {
+    background-color: #ffeb55;
+    width: 10vw;
+    height: 5vh;
+    position: relative;
+    padding: .5em .5em;
+}
+
+h2 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    color: black;
+
+}
